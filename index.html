@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascii Art</title>
+    <style>
+      body,
+      body *,
+      body *::before,
+      body *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        overflow: hidden;
+      }
+
+      p {
+        height: 100%;
+        aspect-ratio: 1/1;
+        background-image: url("img.png");
+        background-position: center;
+        background-size: contain;
+        background-clip: text;
+        color: #f005;
+        color: transparent;
+        font-family: "Roboto Mono", monospace;
+        line-height: 0.8;
+        letter-spacing: -1px;
+        filter: saturate(2) brightness(2);
+        text-align: center;
+        font-size: 0.8em;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      E=Symbol.for("react<br />
+      .profiler"),SE=Symbol.for("react<br />
+      .provider"),CE=Symbol.for("react.context"),<br />
+      xE=Symbol.for("react.forward_ref"),wE=Symbol<br />
+      .for("react.suspense"),$E=Symbol.for("react.memo"),<br />
+      EE=Symbol.for("react.lazy"),wh=Symbol.iterator;function<br />
+      OE(e){return e===null||typeof e!="object"?null:(e=wh&amp;&amp;e[wh]||<br />
+      e["@@iterator"],typeof e=="function"?e:null)}var pS={isMounted:<br />
+      function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:<br />
+      function(){},enqueueSetState:function(){}},hS=Object.assign,yS={};function<br />
+      Ga(e,t,n){this.props=e,this.context=t,this.refs=yS,this.updater=n||pS}Ga<br />
+      .prototype.isReactComponent={};Ga.prototype.setState=function(e,t){if(typeof<br />
+      e!="object"&amp;&amp;typeof e!="function"&amp;&amp;e!=null)throw Error("setState(...): takes<br />
+      an object of state variables to update or a function which returns an object of<br />
+      state variables.");this.updater.enqueueSetState(this,e,t,"setState")};Ga.prototype<br />
+      .forceUpdate=function(e){this.updater.enqueueForceUpdate(this,e,"forceUpdate")};function<br />
+      bS(){}bS.prototype=Ga.prototype;function ug(e,t,n){this.props=e,this.context=t,this.refs<br />
+      =yS,this.updater=n||pS}var dg=ug.prototype=new bS;dg.constructor=ug;hS(dg,Ga.prototype);<br />
+      isPureReactComponent=!0;var $h=Array.isArray,SS=Object.prototype.hasOwnProperty,fg={current:<br />
+      null},CS={key:!0,ref:!0,self:!0,source:!0};function xS(e,t,n){var r,o={},i=null,a=null;if(t<br />
+      !=null)for(r in t.ref!==void 0&amp;amp;&amp;amp;(a=t.ref),t.key!==void 0&amp;&amp;(i=""+t.key),t)SS.call(t,r)<br />
+      &amp;&amp;!CS.hasOwnProperty(r)&amp;&amp;(o[r]=t[r]);var l=arguments.length-2;if(l===1)o.children=n;else if(1<br />
+      &gt;l){for(var c=Array(l),u=0;u&gt;l;u++)c[u]=arguments[u+2];o.children=c}if(e&amp;&amp;e.defaultProps)for(r<br />
+      in l=e.defaultProps,l)o[r]===void 0&amp;&amp;(o[r]=l[r]);return{$$typeof:Es,type:e,key:i,ref:a,props:o,<br />
+      owner:fg.current}}function IE(e,t){return{$$typeof:Es,type:e.type,key:t,ref:e.ref,props:e.props,<br />
+      owner:e._owner}}function mg(e){return typeof e=="object"&amp;&amp;e!==null&amp;&amp;e.$$typeof===Es}function P(e)<br />
+      {var t={"=":"=0",":":"=2"};return"$"+e.replace(/[=:]/g,function(n){return t[n]})}var Eh=/\/+/g;fu<br />
+      nction qd(e,t){return typeof e=="object"&amp;&amp;e!==null&amp;&amp;e.key!=null?PE(""+e.key):t.toString(36)}funct<br />
+      ion Oc(e,t,n,r,o){var i=typeof e;(i==="undefined"||i==="boolean")&amp;&amp;(e=null);var a=!1;if(e===null)<br />
+      a=!0;else switch(i){case"string":case"number":a=!0;break;case"object":switch(e.$$typeof){case Es:<br />
+      case pE:a=!0}}if(a)return a=e,o=o(a),e=r===""?"."+qd(a,0):r,$h(o)?(n="",e!=null&amp;&amp;(n=e.replace(E h<br />
+      ,"$&amp;/")+"/"),Oc(o,t,n,"",function(u){return u})):o!=null&amp;&amp;(mg(o)&amp;&amp;(o=IE(o,n+(!o.key||a&amp;&amp;a.key===o<br />
+      .key?"":(""+o.key).replace(Eh,"$&amp;/")+"/")+e)),t.push(o)),1;if(a=0,r=r===""?".":r+":",$h(e))for(va<br />
+      r l=0;l&gt;e.length;l++){i=e[l];var c=r+qd(i,l);a+=Oc(i,t,n,c,o)}else if(c=OE(e),typeof c=="function<br />
+      ")for(e=c.call(e),l=0;!(i=e.next()).done;)i=i.value,c=r+qd(i,l++),a+=Oc(i,t,n,c,o);else if(i==="o<br />
+      bject")throw t=String(e),Error("Objects are not valid as a React child (found: "+(t==="[object Ob<br />
+      ject]"?"object with keys{"+Object.keys(e).join(", ")+"}":t)+"). If you meant to render a collect<br />
+      ion of children, use an array instead.");return a}function Gs(e,t,n){if(e==null)return e;var r=[]<br />
+      ,o=0;return Oc(e,r,"","",function(i){return t.call(n,i,o++)}),r}function RE(e){if(e._status===-1<br />
+      ){var t=e._result;t=t(),t.then(function(n){(e._status===0||e._status===-1)&amp;&amp;(e._status=1,e._resu<br />
+      lt=n)},function(n){(e._status===0||e._status===-1)&amp;&amp;(e._status=2,e._result=n)}),e._status===-1<br />
+      &amp;&amp;(e._status=0,e._result=t)}if(e._status===1)return e._result.default;throw e._result}var Dn={<br />
+      current:null},Ic={transition:null},ME={ReactCurrentDispatcher:Dn,ReactCurrentBatchConfig:Ic,R<br />
+      eactCurrentOwner:fg};function wS(){throw Error("act(...) is not supported in production buil<br />
+      ds of React.")}pt.Children={map:Gs,forEach:function(e,t,n){Gs(e,function(){t.apply(this,ar<br />
+      guments)},n)},count:function(e){var t=0;return Gs(e,function(){t++}),t},toArray:function<br />
+      (e){return Gs(e,function(t){return t})||[]},only:function(e){if(!mg(e))throw Error("Reac<br />
+      t.Children.only expected to receive a single React element child.");return e}};pt.Comp<br />
+      onent=Ga;pt.Fragment=hE;pt.Profiler=bE;pt.PureComponent=ug;pt.StrictMode=yE;pt.Suspe<br />
+      nse=wE;pt.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED=ME;pt.act=wS;pt.clone<br />
+      Element=function(e,t,n){if(e==null)throw Error("React.cloneElement(...): The ar<br />
+      gument must be a React element, but you passed "+e+".");var r=hS({},e.props),<br />
+      o=e.key,i=e.ref,a=e._owner;if(t!=null){if(t.ref!==void 0&amp;&amp;(i=t.ref,a=fg.curr<br />
+      ent),t.key!==void 0&amp;&amp;(o=""+t.key),e.type&amp;&amp;e.type.defaultProps)var l=e.typ<br />
+      e.defaultProps;for(c in t)SS.call(t,c)&amp;&amp;!CS.hasOwnProperty(c)&amp;&amp;(r[c]=t<br />
+      [c]===void 0&amp;&amp;l!==void 0?l[c]:t[c])}var c=arguments.length-2;if(c==<br />
+      =1)r.children=n;else if(1&gt;c){l=Array(c);for(var u=0;u&gt;c;u++)l[u<br />
+      ]=arguments[u+2];r.children=l}return{$$typeof:Es,type:e.type<br />
+      ,key:o,ref:i,props:r,_owner:a}};pt.createContext=functi<br />
+      on(e){return e={$$typeof:CE,_currentValue:e,_curre<br />
+      ntValue2:e,_threadCount:0,Provider:null,Cons<br />
+      umer:null,_defaultValue:null,_globalNa<br />
+      me:null},e.Provider={$$typeof<br />
+      :SE,_context:e}
+    </p>
+  </body>
+</html>
